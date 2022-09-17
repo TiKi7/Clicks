@@ -6,7 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/temp.css"> -->
+    <link rel="stylesheet" href="css/0_global.css">
+    <link rel="stylesheet" href="css/1_pattern.css">
+    <link rel="stylesheet" href="css/1.2_pattern_error.css">
+    <link rel="stylesheet" href="css/2_main.css">
+    <link rel="stylesheet" href="/css/1.1_main_2.css">
+    <link rel="stylesheet" href="css/3_canvas.css">
+    <link rel="stylesheet" href="css/4_elem.css">
+    <link rel="stylesheet" href="css/5_top.css">
+    <link rel="stylesheet" href="css/6-right.css">
+    <link rel="stylesheet" href="css/7_left.css">
+    <link rel="stylesheet" href="css/8_hatch.css">
+
     <title>Tiki: Clicks @ Sansar</title>
 </head>
 
@@ -14,14 +26,27 @@
     <div id="app">
         <div id="bg" class="pattern1 theme" style="grid-area: 2/2/3/3;"></div>
         <div id="hatch" class="theme">
-            <img id="tl" src="/imgs/hatch_tl.png" alt="">
-            <img id="br" src="/imgs/hatch_br_3.png" alt="">
+            <img id="tl" src="imgs/hatch_tl.png" alt="">
+            <img id="br" src="imgs/hatch_br_3.png" alt="">
         </div>
         <div id="middle">
             <div id="canvas" class="first">
                 <img id="my-img" src="icons/wallpaper-mini-5.png" alt="">
                 <div id="shade" class="theme"></div>
                 <div id="elem-container">
+                    <!-- <div class="elem" style="inset: 27.3% 54.4658% 40.1422% 31.45%;" active=1 select=1 clicks-id="no-id" clicks-event="no-event">
+                        <div id="error">
+                            <div class="stripes"></div>
+                        </div>
+                        <div class="outer">
+                            <div class="pin" id="upper">
+                                <div></div>
+                            </div>
+                            <div class="pin" id="lower">
+                                <div></div>
+                            </div>
+                        </div>
+                    </div> -->
                 </div>
                 <img class="border4" id="tl" src="imgs/border4_tl.png" alt="">
                 <img class="border4" id="tr" src="imgs/border4_tr.png" alt="">
@@ -36,6 +61,8 @@
             <img id="bl" src="imgs/canvas_corner_bl.png" alt="">
             <img id="br" src="imgs/canvas_corner_br.png" alt="">
         </div>
+
+        <!-- Side Bars -->
         <div id="top">
             <div id="toolbar">
                 <span id="gap"></span> |
@@ -77,21 +104,28 @@
                 </div>
             </div>
         </div>
+
+        <!-- Tooltip -->
         <div id="tooltip">
             <div>
+                <!-- <div id="count"><span>[x] Buttons x</span><span id="w">0</span></div> -->
                 <div id="tip"><span>[?] </span><span id="w"></span></div>
                 <div id="desc"><span><br>... </span><span id="w"></span></div>
                 <div id="key"><span><br>Key: </span><span id="w"></span></div>
             </div>
         </div>
+
+        <!-- Event/ID -->
         <div id="event" style="z-index: 1;">
             <div id="input">
-                <img src="imgs/input_3.png" alt="">
+                <img src="/imgs/input_3.png" alt="">
                 <input type="text" id="id" name="clicks-id">
                 <input type="text" id="event" name="clicks-event">
             </div>
             <div id="display">@Tiki</div>
         </div>
+
+        <!-- Axis -->
         <div id="hr">
             <span>120px</span>
         </div>
@@ -99,7 +133,16 @@
             <span>120px</span>
         </div>
     </div>
-    <script src="script/script.js"></script>
+    <!-- <script src="script/temp.js"></script> -->
+    <script src="script/0_init.js"></script>
+    <script src="script/1_pan_zoom.js"></script>
+    <script src="script/99_top.js"></script>
+    <script src="script/100_tooltip.js"></script>
+    <script src="script/101_right.js"></script>
+    <script src="script/200_elem.js"></script>
+    <script src="script/201_hotkey.js"></script>
+    <script src="script/202_toolbar.js"></script>
+    <script src="script/300_input_id_event.js"></script>
 </body>
 
 </html>
