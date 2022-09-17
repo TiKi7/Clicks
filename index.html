@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Tiki: Clicks @ Sansar</title>
+</head>
+
+<body>
+    <div id="app">
+        <div id="bg" class="pattern1 theme" style="grid-area: 2/2/3/3;"></div>
+        <div id="hatch" class="theme">
+            <img id="tl" src="/imgs/hatch_tl.png" alt="">
+            <img id="br" src="/imgs/hatch_br_3.png" alt="">
+        </div>
+        <div id="middle">
+            <div id="canvas" class="first">
+                <img id="my-img" src="icons/wallpaper-mini-5.png" alt="">
+                <div id="shade" class="theme"></div>
+                <div id="elem-container">
+                </div>
+                <img class="border4" id="tl" src="imgs/border4_tl.png" alt="">
+                <img class="border4" id="tr" src="imgs/border4_tr.png" alt="">
+                <img class="border4" id="bl" src="imgs/border4_bl.png" alt="">
+                <img class="border4" id="br" src="imgs/border4_br.png" alt="">
+            </div>
+            <div id="shadow"></div>
+        </div>
+        <div id="corners">
+            <img id="tl" src="imgs/canvas_corner_tl.png" alt="">
+            <img id="tr" src="imgs/canvas_corner_tr.png" alt="">
+            <img id="bl" src="imgs/canvas_corner_bl.png" alt="">
+            <img id="br" src="imgs/canvas_corner_br.png" alt="">
+        </div>
+        <div id="top">
+            <div id="toolbar">
+                <span id="gap"></span> |
+                <span id="load" class="btn btc-white" tip="Load Project" desc="" key=""></span>
+                <span id="save" class="btn btc-white" tip="Save Project" desc="" key=""></span> |
+                <span id="load-image" class="btn btc-white" tip="Load Image" desc="The Image you are going to Use as your Layout" key=""></span>
+                <span id="clear" class="btn btc-white" tip="Clear" desc="Delete all the Existing Buttons." key=""></span> |
+            </div>
+            <div id="theme">
+                <span id="t1" class="btn btc-white" tip="Theme1"></span>
+                <span id="t2" class="btn btc-white" tip="Theme2"></span>
+                <span id="t3" class="btn btc-white" tip="Theme3"></span>
+                <span id="t4" class="btn btc-white" tip="Theme4"></span>
+            </div>
+        </div>
+        <div id="bot"></div>
+        <div id="left">
+            <div>
+                <span id="add" class="btn btc-white" tip="Add" desc="Adds a Button" key="Shift+A"></span>
+                <span id="duplicate" class="btn btc-white" tip="Duplicate" desc="Duplicates selected Buttons" key="Shift+D"></span>
+                <span id="move" class="btn btc-white" tip="Move" desc="Moves selected Buttons (Use Shortcut G instead of using these icons.)" key="G"></span>
+                <span id="select" class="btn btc-white" tip="Select All" desc="Selects all Buttons. you can Shift+Click on your Buttons to multi-select manually." key="A"></span>
+                <span id="deselect" class="btn btc-white" tip="unSelect All" desc="Deselects all Buttons" key="Esc"></span>
+                <span id="remove" class="btn btc-white" tip="Remove" desc="Removes selected Buttons" key="X"></span>
+            </div>
+        </div>
+        <div id="right">
+            <div id="text">How?<br>1. Add your Buttons<br>2. Write their ID and Events<br>3. Copy The Generated Data in Script Window to your Sansar Script<br><br>_Tiki
+            </div>
+            <div id="script">
+                <img id="script-img" src="./imgs/script.png" alt="">
+                <div id="names" class="output">
+                    <div id="w">...</div>
+                    <div id="copy">COPY</div>
+                </div>
+                <div id="data" class="output">
+                    <div id="w">...</div>
+                    <div id="copy">COPY</div>
+                </div>
+            </div>
+        </div>
+        <div id="tooltip">
+            <div>
+                <div id="tip"><span>[?] </span><span id="w"></span></div>
+                <div id="desc"><span><br>... </span><span id="w"></span></div>
+                <div id="key"><span><br>Key: </span><span id="w"></span></div>
+            </div>
+        </div>
+        <div id="event" style="z-index: 1;">
+            <div id="input">
+                <img src="/imgs/input_3.png" alt="">
+                <input type="text" id="id" name="clicks-id">
+                <input type="text" id="event" name="clicks-event">
+            </div>
+            <div id="display">@Tiki</div>
+        </div>
+        <div id="hr">
+            <span>120px</span>
+        </div>
+        <div id="vr">
+            <span>120px</span>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+</body>
+
+</html>
